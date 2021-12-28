@@ -17,7 +17,7 @@ public class ItemRepository {
         if (item.getId() == null) {             //아이템을 새로 추가하는 경우
             em.persist(item);
         } else {
-            em.merge(item);                 //아이템을 업데이트해주는 경우
+            em.merge(item);                 //아이템을 업데이트해주는 경우  찾아온 데이터로 변수 값을 다 바꿔치기 해줌
         }
     }
 
